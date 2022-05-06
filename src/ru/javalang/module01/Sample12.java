@@ -8,7 +8,7 @@ import java.io.PrintStream;
  * для вывода данных на терминал
  */
 
-public class Main02 {
+public class Sample12 {
 
     // Статическая переменная для вывода данных
     static PrintStream out = System.out;
