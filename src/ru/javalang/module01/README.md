@@ -7,6 +7,7 @@
 - Использование интегрированной среды разработки.
 - Практика: Установка JDK/IDE, настройка параметров среды
 - Запуск простейших программ
+- Языковые лексемы Java.
 
 ### JDK
 - [ORACLE](https://www.oracle.com/java/technologies/downloads/)
@@ -28,8 +29,24 @@ public class HelloWorld {
 ```
 #### Запуск компиляции и запуск самой программы
 ```
-javac HelloWorld.java
-java HelloWorld
+> javac HelloWorld.java
+> java HelloWorld
+```
+
+### Файл исходного текста 'HelloWorld.java' для вывода аргуметов коммандной строки
+```
+public class CommandArgs {
+    public static void main(String[] args) {
+        for(int i=0; i<args.length; i++){
+  	        System.out.println("Аргумент " + i + " = " + args[i]);
+  	    }
+    }
+}
+```
+#### Запуск компиляции и запуск самой программы
+```
+> javac CommandArgs.java
+> java CommandArgs
 ```
 
 ### Включение пакетов и отделение исходных текстов от бинарных файлов

@@ -3,21 +3,21 @@ package ru.javalang.module01;
 import java.util.Scanner;
 
 /**
- * Пример программы с вводом целого числа
+ * Пример программы с вводом текстовых данных - 2
  */
 
 public class Sample16 {
 
-    // Объект для ввода данных
-    static Scanner in = new Scanner(System.in);
-
     public static void main(String[] args) {
 
-        System.out.print("Введите целое число: ");
+        // Объект для ввода данных
+        Scanner in = new Scanner(System.in);
 
-        // Использование функции считывания целого числа
-        int n = in.nextInt();
+        System.out.print("Введите строку: ");
 
-        System.out.println("Получено число: " + n);
+        // Использование функции считывания строки
+        String s = in.next();
+
+        System.out.println("Строка: " + s);
     }
 }

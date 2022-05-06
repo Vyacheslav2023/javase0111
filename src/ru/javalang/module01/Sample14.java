@@ -1,23 +1,27 @@
 package ru.javalang.module01;
 
-import java.util.Scanner;
+import java.io.IOException;
 
 /**
- * Пример программы с вводом текстовых данных - 2
+ * Пример ввода символа при помощи метода System.in.read()
  */
 
 public class Sample14 {
-
     public static void main(String[] args) {
 
-        // Объект для ввода данных
-        Scanner in = new Scanner(System.in);
+        //Объявление переменных
+        int n;
+        char c;
 
-        System.out.print("Введите строку: ");
+        System.out.print("Введите символ: ");
 
-        // Использование функции считывания строки
-        String s = in.next();
-
-        System.out.println("Строка: " + s);
+        // Блок try-catch для обработки ввода символа с клавиатуры
+        try {
+            n = System.in.read();
+            c = (char) n;
+            System.out.println("Код символа '" + c + "' = " + n);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 }

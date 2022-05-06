@@ -1,19 +1,12 @@
 package ru.javalang.module01;
 
-import java.io.PrintStream;
-
 /**
- * Пример программы со статитечской переменной
- * типа PrintStream
- * для вывода данных на терминал
+ * Пример вывода аргуметов коммандной строки
  */
-
 public class Sample12 {
-
-    // Статическая переменная для вывода данных
-    static PrintStream out = System.out;
-
     public static void main(String[] args) {
-        out.println("Привет! Вывод из переменной типа PrintStream.");
+        for (int i = 0; i < args.length; i++) {
+            System.out.println("arg["+i+"] = " + args[i]);
+        }
     }
 }

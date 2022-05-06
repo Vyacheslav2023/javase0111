@@ -3,21 +3,18 @@ package ru.javalang.module01;
 import java.util.Scanner;
 
 /**
- * Пример программы с вводом вещественного числа
+ * Пример программы с вводом текстовых данных - 3
  */
 
 public class Sample17 {
 
-    // Объект для ввода данных
-    static Scanner in = new Scanner(System.in);
-
     public static void main(String[] args) {
 
-        System.out.print("Введите вещественное число\n(разделитель точка или запятая): ");
+        System.out.print("Введите строку: ");
 
-        // Использование функции считывания вещественного числа
-        double n = in.nextDouble();
+        // Использование функции считывания строки с одновременным созданием объекта
+        String s = new Scanner(System.in).next();
 
-        System.out.println("Получено: " + n);
+        System.out.println("Строка: " + s);
     }
 }

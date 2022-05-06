@@ -1,23 +1,19 @@
 package ru.javalang.module01;
 
-import java.util.Scanner;
+import java.io.PrintStream;
 
 /**
- * Пример программы с вводом текстовых данных - 1
+ * Пример программы со статитечской переменной
+ * типа PrintStream
+ * для вывода данных на терминал
  */
 
 public class Sample13 {
 
-    // Объект для ввода данных
-    static Scanner in = new Scanner(System.in);
+    // Статическая переменная для вывода данных
+    static PrintStream out = System.out;
 
     public static void main(String[] args) {
-
-        System.out.print("Введите строку: ");
-
-        // Использование функции считывания строки
-        String s = in.next();
-
-        System.out.println("Вы ввели: " + s);
+        out.println("Привет! Вывод из переменной типа PrintStream.");
     }
 }
