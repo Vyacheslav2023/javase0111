@@ -1,0 +1,14 @@
+package ru.javalang.module14;
+
+public class Sample1408Queue {
+    public static void main(String[] args) {
+        java.util.Queue<String> queue
+                = new java.util.LinkedList<String>();
+        queue.offer("Oklahoma");
+        queue.offer("Indiana");
+        queue.offer("Georgia");
+        queue.offer("Texas");
+        while (queue.size() > 0)
+            System.out.print(queue.remove() + " ");
+    }
+}
