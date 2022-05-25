@@ -16,6 +16,13 @@ public class Sample1004NPE {
         System.out.println("Продолжаем программу ...");
     }
 
+    /**
+     * Method findWord:
+     * @param text
+     * @param word
+     * @return
+     * @throws NullPointerException
+     */
     public static int[] findWord(String text, String word) throws NullPointerException {
         if (text == null || word == null) {
             throw new NullPointerException("text == null || word == null");

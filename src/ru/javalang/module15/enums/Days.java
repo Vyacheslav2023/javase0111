@@ -1,7 +1,9 @@
 package ru.javalang.module15.enums;
 
 public enum Days {
-    MONDAY("Понедельник"),
+    MONDAY("Понедельник"){
+
+    },
     TUESDAY("Вторник"),
     WEDNESDAY("Среда"),
     THURSDAY("Четверг"),
