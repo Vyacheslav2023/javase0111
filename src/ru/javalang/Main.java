@@ -1,4 +1,4 @@
-package ru.javalang;
+//package ru.javalang;
 
 public class Main {
     public static void main(String[] args) {
