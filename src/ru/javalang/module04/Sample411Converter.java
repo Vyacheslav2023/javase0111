@@ -18,7 +18,12 @@ public class Sample411Converter {
         System.out.print("Введите порядковый номер дня для определения месяца и числа: ");
 
         int n = new Scanner(System.in).nextInt();
-
+        int m=n/30, md, x=0;
+        for (int i = 0; i < m; i++) {
+            x+=monthDays[i];
+        }
+        md=n-x;
+        System.out.println("Mesyac: "+monthes[m]+". Den mesyaca: "+md);
         // Здесь должен быть код!
 
     }
