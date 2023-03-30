@@ -11,4 +11,28 @@ package ru.javalang.module04.tasks.t05;
  */
 
 public class Main {
-}
+    public static void main(String[] args) {
+
+        int n = 10;
+        int[] m = new int[n];
+        int[] mm = new int[n];
+        for (int i = 0; i < n; i++) {
+            m[i] = (int) (Math.random() * 100) * (int) (Math.random() + 0.5);
+            System.out.print(m[i] + " ");
+        }
+        int j = 0;
+        for (int i = 0; i < n; i++) {
+            if (m[i] == 0) {
+                m[j] = 0;
+                j++;
+            }
+        }
+        for (int i = 0; i < n; i++) {
+            if (m[i] != 0) {
+                m[j] = m[i];
+                j++;
+            }
+        }
+    }
+    }
+
